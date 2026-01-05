@@ -1,35 +1,57 @@
 @import 'tailwindcss';
 
 :root {
-  --color-brand-blue-50: #eaffff;
-  --color-brand-blue-100: #cafeff;
-  --color-brand-blue-200: #9bfcff;
-  --color-brand-blue-300: #57f5ff;
-  --color-brand-blue-400: #0ce5ff;
-  --color-brand-blue-500: #00c8eb;
-  --color-brand-blue-600: #009ec5;
-  --color-brand-blue-700: #007d9e;
-  --color-brand-blue-800: #0a6480;
-  --color-brand-blue-900: #0c495f;
-  --color-brand-blue-950: #01374b;
+  --color-yukon-50: hsl(36, 87%, 94%);
+  --color-yukon-100: hsl(39, 85%, 87%);
+  --color-yukon-200: hsl(43, 89%, 68%);
+  --color-yukon-300: hsl(43, 65%, 61%);
+  --color-yukon-400: hsl(43, 49%, 53%);
+  --color-yukon-500: hsl(43, 44%, 43%);
+  --color-yukon-600: hsl(44, 47%, 34%);
+  --color-yukon-700: hsl(43, 47%, 25%);
+  --color-yukon-800: hsl(43, 52%, 17%);
+  --color-yukon-900: hsl(43, 64%, 9%);
+  --color-yukon-950: hsl(43, 72%, 6%);
 
-  --color-brand-yellow-50: #fffdea;
-  --color-brand-yellow-100: #fff9c5;
-  --color-brand-yellow-200: #fff486;
-  --color-brand-yellow-300: #ffe846;
-  --color-brand-yellow-400: #ffd71c;
-  --color-brand-yellow-500: #feb806;
-  --color-brand-yellow-600: #e18c00;
-  --color-brand-yellow-700: #bb6302;
-  --color-brand-yellow-800: #974c09;
-  --color-brand-yellow-900: #7c3e0b;
-  --color-brand-yellow-950: #481f00;
+  --color-navy-50: hsl(246 22.7% 91.4%);
+  --color-navy-100: hsl(243 23.3% 83.1%);
+  --color-navy-200: hsl(241.5 22.5% 66.1%);
+  --color-navy-300: hsl(241.1 20.8% 50%);
+  --color-navy-400: hsl(241.3 28.7% 31.4%);
+  --color-navy-500: hsl(241.5 29.9% 26.9%);
+  --color-navy-600: hsl(241.8 30.9% 21.6%);
+  --color-navy-700: hsl(242.1 32.6% 17.5%);
+  --color-navy-800: hsl(240 34.3% 13.7%);
+  --color-navy-900: hsl(243.5 41.5% 8%);
+  --color-navy-950: hsl(240 50% 4.7%);
+
+  --color-golden-50: hsl(22.5 100% 96.9%);
+  --color-golden-100: hsl(21.8 100% 93.5%);
+  --color-golden-200: hsl(24.9 97.2% 85.9%);
+  --color-golden-300: hsl(27 98.4% 75.7%);
+  --color-golden-400: hsl(32.5 99% 62%);
+  --color-golden-500: hsl(36, 85%, 45%);
+  --color-golden-600: hsl(36.1 88.8% 34.9%);
+  --color-golden-700: hsl(35.4 91% 26.3%);
+  --color-golden-800: hsl(35 95.5% 17.3%);
+  --color-golden-900: hsl(32.4 96.2% 10.2%);
+  --color-golden-950: hsl(30 100% 6.3%);
 }
 
 @theme {
-  --color-background: var(--color-zinc-200);
-  --color-foreground: var(--color-zinc-700);
-  --color-primary: var(--color-brand-blue-600);
+  --color-background: var(--color-yukon-50);
+  --color-background-inverted: var(--color-zinc-900);
+
+  --color-foreground: var(--color-zinc-900);
+  --color-foreground-inverted: var(--color-white);
+
+  --color-highlight: var(--color-zinc-700);
+
+  --color-primary: var(--color-navy-500);
+  --color-destructive: var(--color-red-700);
+  --color-warning: var(--color-orange-600);
+  --color-muted: var(--color-zinc-300);
+  --color-muted-foreground: var(--color-zinc-600);
 }
 
 @layer theme {
