@@ -46,6 +46,7 @@
   --color-foreground-inverted: var(--color-white);
 
   --color-highlight: var(--color-zinc-700);
+  --color-light: var(--white);
 
   --color-primary: var(--color-navy-500);
   --color-destructive: var(--color-red-700);
