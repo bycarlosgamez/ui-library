@@ -71,7 +71,7 @@
     --color-primary: var(--color-navy-100);
     --color-secondary: var(--color-navy-50);
 
-    --color-destructive: var(--color-red-00);
+    --color-destructive: var(--color-red-600);
     --color-warning: var(--color-orange-600);
     --color-muted: var(--color-zinc-300);
     --color-muted-foreground: var(--color-zinc-600);
