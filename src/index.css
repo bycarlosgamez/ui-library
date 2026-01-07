@@ -49,6 +49,8 @@
   --color-light: var(--white);
 
   --color-primary: var(--color-navy-500);
+  --color-secondary: var(--color-navy-400);
+
   --color-destructive: var(--color-red-700);
   --color-warning: var(--color-orange-600);
   --color-muted: var(--color-zinc-300);
@@ -58,8 +60,21 @@
 @layer theme {
   .dark {
     --color-background: var(--color-zinc-900);
-    --color-foreground: var(--color-zinc-100);
-    --color-primary: var(--color-brand-blue-400);
+    --color-background-inverted: var(--color-white);
+
+    --color-foreground: var(--color-white);
+    --color-foreground-inverted: var(--color-zinc-900);
+
+    --color-highlight: var(--color-zinc-200);
+    --color-light: var(--white);
+
+    --color-primary: var(--color-navy-100);
+    --color-secondary: var(--color-navy-50);
+
+    --color-destructive: var(--color-red-00);
+    --color-warning: var(--color-orange-600);
+    --color-muted: var(--color-zinc-300);
+    --color-muted-foreground: var(--color-zinc-600);
   }
 }
 
