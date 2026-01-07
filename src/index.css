@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --color-yukon-50: hsl(36, 87%, 94%);
   --color-yukon-100: hsl(39, 85%, 87%);
@@ -55,6 +57,7 @@
   --color-warning: var(--color-orange-600);
   --color-muted: var(--color-zinc-300);
   --color-muted-foreground: var(--color-zinc-600);
+  --color-accent: var(--color-golden-500);
 }
 
 @layer theme {
