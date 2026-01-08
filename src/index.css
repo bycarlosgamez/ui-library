@@ -43,41 +43,57 @@
 @theme {
   --color-background: var(--color-yukon-50);
   --color-background-inverted: var(--color-zinc-900);
-
   --color-foreground: var(--color-zinc-900);
   --color-foreground-inverted: var(--color-white);
-
   --color-highlight: var(--color-zinc-700);
   --color-light: var(--white);
-
   --color-primary: var(--color-navy-500);
   --color-secondary: var(--color-navy-400);
-
   --color-destructive: var(--color-red-700);
   --color-warning: var(--color-orange-600);
   --color-muted: var(--color-zinc-300);
   --color-muted-foreground: var(--color-zinc-600);
   --color-accent: var(--color-golden-500);
+
+  --shadow-color: 24 70% 28%;
+
+  --shadow-none: none;
+  --shadow-raised:
+    0 4px 0 hsl(var(--shadow-color) / 0.25),
+    0 6px 10px hsl(var(--shadow-color) / 0.15);
+  --shadow-interactive:
+    0 6px 0 hsl(var(--shadow-color) / 0.3),
+    0 10px 16px hsl(var(--shadow-color) / 0.18);
+  --shadow-overlay:
+    0 10px 0 hsl(var(--shadow-color) / 0.35),
+    0 18px 28px hsl(var(--shadow-color) / 0.25);
 }
 
 @layer theme {
   .dark {
     --color-background: var(--color-zinc-900);
     --color-background-inverted: var(--color-white);
-
     --color-foreground: var(--color-white);
     --color-foreground-inverted: var(--color-zinc-900);
-
     --color-highlight: var(--color-zinc-200);
     --color-light: var(--white);
-
     --color-primary: var(--color-navy-100);
     --color-secondary: var(--color-navy-50);
-
     --color-destructive: var(--color-red-600);
     --color-warning: var(--color-orange-600);
     --color-muted: var(--color-zinc-300);
-    --color-muted-foreground: var(--color-zinc-600);
+    --color-muted-foreground: var(--color-zinc-400);
+
+    --shadow-color: 241 20% 55%;
+    --shadow-raised:
+      0 3px 0 hsl(var(--shadow-color) / 0.4),
+      0 6px 12px hsl(var(--shadow-color) / 0.25);
+    --shadow-interactive:
+      0 5px 0 hsl(var(--shadow-color) / 0.45),
+      0 10px 16px hsl(var(--shadow-color) / 0.3);
+    --shadow-overlay:
+      0 8px 0 hsl(var(--shadow-color) / 0.5),
+      0 16px 24px hsl(var(--shadow-color) / 0.35);
   }
 }
 
