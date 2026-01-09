@@ -1,7 +1,7 @@
 import { mergeProps, useRender } from '@base-ui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
-const cardVariants = cva('rounded-2xl border border-primary/30', {
+const cardVariants = cva('rounded-2xl border border-primary/30 bg-card', {
   variants: {
     variant: {
       raised: 'shadow-raised',

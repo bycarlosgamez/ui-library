@@ -54,6 +54,7 @@
   --color-muted: var(--color-zinc-300);
   --color-muted-foreground: var(--color-zinc-600);
   --color-accent: var(--color-golden-500);
+  --color-card: var(--color-white);
 
   --shadow-color: 24 70% 28%;
 
@@ -83,6 +84,7 @@
     --color-warning: var(--color-orange-600);
     --color-muted: var(--color-zinc-300);
     --color-muted-foreground: var(--color-zinc-400);
+    --color-card: var(--color-zinc-800);
 
     --shadow-color: 241 20% 55%;
     --shadow-raised:
