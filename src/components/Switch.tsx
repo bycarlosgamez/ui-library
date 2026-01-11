@@ -35,12 +35,12 @@ const thumbVariants = cva(
   `,
 );
 
-interface ToggleSwitchProps
+interface SwitchProps
   extends
     useRender.ComponentProps<'switch'>,
     VariantProps<typeof rootVariants> {}
 
-export const ToggleSwitch = (props: ToggleSwitchProps) => {
+export const Switch = (props: SwitchProps) => {
   const rootProps = mergeProps(props, {
     className: rootVariants(),
   });
