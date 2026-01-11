@@ -53,8 +53,9 @@
   --color-warning: var(--color-orange-600);
   --color-muted: var(--color-zinc-300);
   --color-muted-foreground: var(--color-zinc-600);
-  --color-accent: var(--color-golden-500);
+  --color-accent: var(--color-orange-700);
   --color-card: var(--color-white);
+  --color-link: var(--color-orange-700);
 
   --shadow-color: 24 70% 28%;
 
@@ -88,9 +89,11 @@
     --color-secondary: var(--color-navy-50);
     --color-destructive: var(--color-red-600);
     --color-warning: var(--color-orange-600);
-    --color-muted: var(--color-zinc-300);
+    --color-muted: var(--color-zinc-600);
     --color-muted-foreground: var(--color-zinc-400);
+    --color-accent: var(--color-orange-400);
     --color-card: var(--color-zinc-800);
+    --color-link: var(--color-orange-400);
 
     --shadow-color: 241 20% 55%;
     --shadow-raised:
