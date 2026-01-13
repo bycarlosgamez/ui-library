@@ -48,7 +48,7 @@
   --color-highlight: var(--color-zinc-700);
   --color-light: var(--white);
   --color-primary: var(--color-navy-500);
-  --color-secondary: var(--color-navy-400);
+  --color-secondary: var(--color-navy-50);
   --color-destructive: var(--color-red-700);
   --color-warning: var(--color-orange-600);
   --color-muted: var(--color-zinc-300);
@@ -56,6 +56,30 @@
   --color-accent: var(--color-orange-700);
   --color-card: var(--color-white);
   --color-link: var(--color-orange-700);
+
+  --color-primary-surface: var(--color-primary);
+  --color-primary-foreground: var(--color-white);
+  --color-secondary-surface: var(--color-secondary);
+  --color-secondary-foreground: var(--color-primary);
+  --color-success-surface: var(--color-green-200);
+  --color-success-foreground: var(--color-green-950);
+  --color-info-surface: var(--color-blue-200);
+  --color-info-foreground: var(--color-blue-950);
+  --color-destructive-surface: var(--color-red-100);
+  --color-destructive-foreground: var(--color-red-700);
+  --color-warning-surface: var(--color-orange-200);
+  --color-warning-foreground: var(--color-orange-700);
+  --color-accent-surface: var(--color-accent);
+  --color-accent-foreground: var(--color-white);
+  --color-muted-surface: var(--color-muted);
+  --color-muted-foreground-strong: var(--color-zinc-800);
+
+  --color-primary-subtle: hsl(from var(--color-primary-surface) h s l / 0.15);
+  --color-destructive-subtle: hsl(
+    from var(--color-destructive-surface) h s l / 0.15
+  );
+  --color-warning-subtle: hsl(from var(--color-warning-surface) h s l / 0.15);
+  --color-primary-border: hsl(from var(--color-primary-surface) h s l / 0.4);
 
   --shadow-color: 24 70% 28%;
 
@@ -79,7 +103,7 @@
 
 @layer theme {
   .dark {
-    --color-background: var(--color-zinc-900);
+    --color-background: var(--color-zinc-950);
     --color-background-inverted: var(--color-white);
     --color-foreground: var(--color-white);
     --color-foreground-inverted: var(--color-zinc-900);
@@ -91,9 +115,24 @@
     --color-warning: var(--color-orange-600);
     --color-muted: var(--color-zinc-600);
     --color-muted-foreground: var(--color-zinc-400);
-    --color-accent: var(--color-orange-400);
-    --color-card: var(--color-zinc-800);
+    --color-accent: var(--color-white);
+    --color-card: var(--color-zinc-900);
     --color-link: var(--color-orange-400);
+
+    --color-primary-surface: var(--color-navy-300);
+    --color-primary-foreground: var(--color-navy-950);
+    --color-secondary-surface: var(--color-navy-400);
+    --color-secondary-foreground: var(--color-navy-50);
+    --color-success-surface: var(--color-green-200);
+    --color-success-foreground: var(--color-green-950);
+    --color-destructive-surface: var(--color-red-400);
+    --color-destructive-foreground: var(--color-red-950);
+    --color-warning-surface: var(--color-yellow-100);
+    --color-warning-foreground: var(--color-yellow-500);
+    --color-accent-surface: var(--color-orange-400);
+    --color-accent-foreground: var(--color-orange-950);
+    --color-muted-surface: var(--color-zinc-700);
+    --color-muted-foreground-strong: var(--color-zinc-200);
 
     --shadow-color: 241 20% 55%;
     --shadow-raised:
