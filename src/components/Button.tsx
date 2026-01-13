@@ -3,16 +3,18 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { twMerge } from 'tailwind-merge';
 
 const buttonVariants = cva(
-  'inline-flex justify-center items-center cursor-pointer hover:opacity-80 focus-visible:ring-highlight/30 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none border border-transparent',
+  'inline-flex justify-center items-center cursor-pointer hover:opacity-80 focus-visible:ring-highlight/30 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none border',
   {
     variants: {
       variant: {
-        default: 'bg-primary text-foreground-inverted',
-        secondary: 'bg-secondary/10 text-foreground',
-        outline: 'border-primary text-primary bg-primary/5',
-        ghost: 'bg-primary/0 hover:bg-primary/10 text-foreground',
-        destructive: 'bg-destructive/10 text-destructive',
-        link: 'text-link hover:underline',
+        default: 'bg-primary text-foreground-inverted border-transparent',
+        secondary: 'bg-card text-foreground border-foreground/30',
+        outline: 'border-primary text-primary',
+        ghost:
+          'bg-primary/5 hover:bg-primary/10 text-foreground border-transparent',
+        destructive:
+          'bg-destructive-surface text-destructive-foreground border-transparent',
+        link: 'text-link hover:underline border-transparent',
       },
       size: {
         xs: 'h-6 px-2 rounded-sm text-xs',

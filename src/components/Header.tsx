@@ -17,6 +17,7 @@ export const Header = () => {
         }}
         size='icon'
         variant='secondary'
+        className='border-accent/40'
       >
         {theme === 'dark' ? (
           <Moon className='absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0' />
