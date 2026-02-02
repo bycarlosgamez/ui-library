@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+:root {
+  --color-brand-blue-50: #eaffff;
+  --color-brand-blue-100: #cafeff;
+  --color-brand-blue-200: #9bfcff;
+  --color-brand-blue-300: #57f5ff;
+  --color-brand-blue-400: #0ce5ff;
+  --color-brand-blue-500: #00c8eb;
+  --color-brand-blue-600: #009ec5;
+  --color-brand-blue-700: #007d9e;
+  --color-brand-blue-800: #0a6480;
+  --color-brand-blue-900: #0c495f;
+  --color-brand-blue-950: #01374b;
+
+  --color-brand-yellow-50: #fffdea;
+  --color-brand-yellow-100: #fff9c5;
+  --color-brand-yellow-200: #fff486;
+  --color-brand-yellow-300: #ffe846;
+  --color-brand-yellow-400: #ffd71c;
+  --color-brand-yellow-500: #feb806;
+  --color-brand-yellow-600: #e18c00;
+  --color-brand-yellow-700: #bb6302;
+  --color-brand-yellow-800: #974c09;
+  --color-brand-yellow-900: #7c3e0b;
+  --color-brand-yellow-950: #481f00;
+}
+
+@theme {
+  --color-background: var(--color-zinc-200);
+  --color-foreground: var(--color-zinc-700);
+  --color-primary: var(--color-brand-blue-600);
+}
+
+@layer theme {
+  .dark {
+    --color-background: var(--color-zinc-900);
+    --color-foreground: var(--color-zinc-100);
+    --color-primary: var(--color-brand-blue-400);
+  }
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-background text-foreground;
+  }
+}
