@@ -2,18 +2,61 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* ───────────────────────────────────────────────
+   Retro "Best Memories" Palette
+   Derived from the original yukon / navy / golden
+   structure, re-mapped to the coral-lavender-teal
+   palette from the reference image.
+   ─────────────────────────────────────────────── */
+
 :root {
-  --color-yukon-50: hsl(36, 87%, 94%);
-  --color-yukon-100: hsl(39, 85%, 87%);
-  --color-yukon-200: hsl(43, 89%, 68%);
-  --color-yukon-300: hsl(43, 65%, 61%);
-  --color-yukon-400: hsl(43, 49%, 53%);
-  --color-yukon-500: hsl(43, 44%, 43%);
-  --color-yukon-600: hsl(44, 47%, 34%);
-  --color-yukon-700: hsl(43, 47%, 25%);
-  --color-yukon-800: hsl(43, 52%, 17%);
-  --color-yukon-900: hsl(43, 64%, 9%);
-  --color-yukon-950: hsl(43, 72%, 6%);
+  --color-cream-50: hsl(30, 60%, 97%);
+  --color-cream-100: hsl(30, 55%, 94%);
+  --color-cream-200: hsl(30, 50%, 88%);
+  --color-cream-300: hsl(30, 45%, 82%);
+  --color-cream-400: hsl(30, 40%, 72%);
+  --color-cream-500: hsl(30, 35%, 60%);
+  --color-cream-600: hsl(30, 30%, 48%);
+  --color-cream-700: hsl(30, 28%, 36%);
+  --color-cream-800: hsl(30, 26%, 24%);
+  --color-cream-900: hsl(30, 24%, 14%);
+  --color-cream-950: hsl(30, 22%, 8%);
+
+  --color-coral-50: hsl(8, 80%, 96%);
+  --color-coral-100: hsl(8, 78%, 90%);
+  --color-coral-200: hsl(8, 72%, 82%);
+  --color-coral-300: hsl(8, 68%, 74%);
+  --color-coral-400: hsl(8, 65%, 68%);
+  --color-coral-500: hsl(8, 60%, 62%);
+  --color-coral-600: hsl(8, 55%, 52%);
+  --color-coral-700: hsl(8, 50%, 42%);
+  --color-coral-800: hsl(8, 48%, 32%);
+  --color-coral-900: hsl(8, 46%, 20%);
+  --color-coral-950: hsl(8, 44%, 12%);
+
+  --color-lavender-50: hsl(245, 40%, 94%);
+  --color-lavender-100: hsl(245, 38%, 88%);
+  --color-lavender-200: hsl(245, 36%, 80%);
+  --color-lavender-300: hsl(245, 34%, 72%);
+  --color-lavender-400: hsl(245, 32%, 64%);
+  --color-lavender-500: hsl(245, 30%, 56%);
+  --color-lavender-600: hsl(245, 28%, 46%);
+  --color-lavender-700: hsl(245, 26%, 36%);
+  --color-lavender-800: hsl(245, 24%, 26%);
+  --color-lavender-900: hsl(245, 22%, 16%);
+  --color-lavender-950: hsl(245, 20%, 10%);
+
+  --color-golden-50: hsl(45, 100%, 96%);
+  --color-golden-100: hsl(45, 95%, 90%);
+  --color-golden-200: hsl(45, 92%, 78%);
+  --color-golden-300: hsl(45, 90%, 68%);
+  --color-golden-400: hsl(45, 88%, 60%);
+  --color-golden-500: hsl(45, 85%, 52%);
+  --color-golden-600: hsl(45, 80%, 42%);
+  --color-golden-700: hsl(45, 75%, 32%);
+  --color-golden-800: hsl(45, 70%, 22%);
+  --color-golden-900: hsl(45, 65%, 14%);
+  --color-golden-950: hsl(45, 60%, 8%);
 
   --color-navy-50: hsl(246 22.7% 91.4%);
   --color-navy-100: hsl(243 23.3% 83.1%);
@@ -26,84 +69,162 @@
   --color-navy-800: hsl(240 34.3% 13.7%);
   --color-navy-900: hsl(243.5 41.5% 8%);
   --color-navy-950: hsl(240 50% 4.7%);
-
-  --color-golden-50: hsl(22.5 100% 96.9%);
-  --color-golden-100: hsl(21.8 100% 93.5%);
-  --color-golden-200: hsl(24.9 97.2% 85.9%);
-  --color-golden-300: hsl(27 98.4% 75.7%);
-  --color-golden-400: hsl(32.5 99% 62%);
-  --color-golden-500: hsl(36, 85%, 45%);
-  --color-golden-600: hsl(36.1 88.8% 34.9%);
-  --color-golden-700: hsl(35.4 91% 26.3%);
-  --color-golden-800: hsl(35 95.5% 17.3%);
-  --color-golden-900: hsl(32.4 96.2% 10.2%);
-  --color-golden-950: hsl(30 100% 6.3%);
 }
 
-@theme {
-  --color-background: var(--color-yukon-50);
-  --color-background-inverted: var(--color-zinc-900);
-  --color-foreground: var(--color-zinc-900);
-  --color-foreground-inverted: var(--color-white);
-  --color-highlight: var(--color-zinc-700);
-  --color-light: var(--white);
-  --color-primary: var(--color-navy-500);
-  --color-secondary: var(--color-navy-400);
-  --color-destructive: var(--color-red-700);
-  --color-warning: var(--color-orange-600);
-  --color-muted: var(--color-zinc-300);
-  --color-muted-foreground: var(--color-zinc-600);
-  --color-accent: var(--color-golden-500);
-  --color-card: var(--color-white);
+/* ───────────────────────────────────────────────
+   Semantic Design Tokens
+   ─────────────────────────────────────────────── */
 
-  --shadow-color: 24 70% 28%;
+@theme {
+  /* ── Surfaces ── */
+  --color-background: var(--color-coral-200);
+  --color-background-inverted: var(--color-navy-950);
+
+  --color-foreground: var(--color-navy-500);
+  --color-foreground-inverted: var(--color-cream-50);
+  --color-highlight: var(--color-golden-300);
+  --color-light: var(--color-cream-50);
+
+  /* ── Brand ── */
+  --color-primary: var(--color-cream-50);
+  --color-primary-foreground: var(--color-cream-50);
+  --color-secondary: var(--color-lavender-300);
+  --color-secondary-foreground: var(--color-cream-50);
+
+  /* ── Status ── */
+  --color-destructive: var(--color-red-700);
+  --color-warning: var(--color-golden-500);
+
+  /* ── Neutral / Muted ── */
+  --color-muted: var(--color-cream-300);
+  --color-muted-foreground: var(--color-cream-600);
+
+  /* ── Accent ── */
+  --color-accent: var(--color-teal-500);
+  --color-accent-foreground: var(--color-cream-50);
+
+  /* ── Card ── */
+  --color-card: var(--color-lavender-600);
+  --color-card-foreground: var(--color-cream-50);
+  --color-card-alt: var(--color-teal-500);
+  --color-card-alt-foreground: var(--color-cream-50);
+  --color-card-highlight: var(--color-golden-400);
+  --color-card-highlight-foreground: var(--color-coral-900);
+
+  /* ── Surface (main content area bg) ── */
+  --color-surface: var(--color-coral-300);
+  --color-surface-foreground: var(--color-cream-50);
+  --color-surface-stripe: var(--color-coral-400);
+
+  /* ── Nav ── */
+  --color-nav: var(--color-cream-50);
+  --color-nav-foreground: var(--color-navy-400);
+  --color-nav-logo: var(--color-coral-400);
+
+  /* ── Button / CTA ── */
+  --color-button: var(--color-cream-100);
+  --color-button-foreground: var(--color-coral-800);
+
+  /* ── Shadows (warm coral-tinted) ── */
+  --shadow-color: 8 50% 35%;
 
   --shadow-none: none;
 
   --shadow-raised:
-    0 4px 0 hsl(var(--shadow-color) / 0.25),
-    0 6px 10px hsl(var(--shadow-color) / 0.15);
+    0 4px 0 hsl(var(--shadow-color) / 0.2),
+    0 6px 10px hsl(var(--shadow-color) / 0.12);
 
   --shadow-interactive:
-    0 8px 0 hsl(var(--shadow-color) / 0.3),
-    0 12px 16px hsl(var(--shadow-color) / 0.18);
+    0 8px 0 hsl(var(--shadow-color) / 0.25),
+    0 12px 16px hsl(var(--shadow-color) / 0.15);
 
   --shadow-overlay:
-    0 12px 0 hsl(var(--shadow-color) / 0.35),
-    0 20px 28px hsl(var(--shadow-color) / 0.25);
+    0 12px 0 hsl(var(--shadow-color) / 0.3),
+    0 20px 28px hsl(var(--shadow-color) / 0.2);
+
+  --shadow-subtle:
+    0 1px 2px hsl(var(--shadow-color) / 0.08),
+    0 2px 4px hsl(var(--shadow-color) / 0.06);
 
   --shadow-inset:
-    inset 0 1px 0 hsl(0 0% 0% / 0.08), inset 0 -1px 0 hsl(0 0% 100% / 0.35);
+    inset 0 1px 0 hsl(0 0% 0% / 0.06), inset 0 -1px 0 hsl(0 0% 100% / 0.3);
+
+  /* ── Border Radius ── */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.25rem;
+  --radius-full: 9999px;
 }
+
+/* ───────────────────────────────────────────────
+   Dark Mode Overrides
+   ─────────────────────────────────────────────── */
 
 @layer theme {
   .dark {
-    --color-background: var(--color-zinc-900);
-    --color-background-inverted: var(--color-white);
-    --color-foreground: var(--color-white);
-    --color-foreground-inverted: var(--color-zinc-900);
-    --color-highlight: var(--color-zinc-200);
-    --color-light: var(--white);
-    --color-primary: var(--color-navy-100);
-    --color-secondary: var(--color-navy-50);
-    --color-destructive: var(--color-red-600);
-    --color-warning: var(--color-orange-600);
-    --color-muted: var(--color-zinc-300);
-    --color-muted-foreground: var(--color-zinc-400);
-    --color-card: var(--color-zinc-800);
+    --color-background: var(--color-navy-950);
+    --color-background-inverted: var(--color-cream-50);
+    --color-foreground: var(--color-cream-100);
+    --color-foreground-inverted: var(--color-navy-950);
+    --color-highlight: var(--color-cream-200);
+    --color-light: var(--color-cream-50);
 
-    --shadow-color: 241 20% 55%;
+    --color-primary: var(--color-navy-300);
+    --color-primary-foreground: var(--color-coral-950);
+    --color-secondary: var(--color-lavender-200);
+    --color-secondary-foreground: var(--color-lavender-950);
+
+    --color-destructive: var(--color-red-500);
+    --color-warning: var(--color-golden-400);
+
+    --color-muted: var(--color-cream-700);
+    --color-muted-foreground: var(--color-cream-400);
+
+    --color-accent: var(--color-teal-400);
+    --color-accent-foreground: var(--color-teal-950);
+
+    --color-card: var(--color-navy-900);
+    --color-card-foreground: var(--color-lavender-100);
+    --color-card-alt: var(--color-teal-700);
+    --color-card-alt-foreground: var(--color-teal-50);
+    --color-card-highlight: var(--color-golden-600);
+    --color-card-highlight-foreground: var(--color-golden-50);
+
+    --color-surface: var(--color-coral-800);
+    --color-surface-foreground: var(--color-coral-100);
+    --color-surface-stripe: var(--color-coral-700);
+
+    --color-nav: var(--color-navy-800);
+    --color-nav-foreground: var(--color-cream-200);
+    --color-nav-logo: var(--color-cream-200);
+
+    --color-button: var(--color-cream-800);
+    --color-button-foreground: var(--color-cream-100);
+
+    --shadow-color: 245 20% 45%;
+
+    --shadow-subtle:
+      0 1px 2px hsl(var(--shadow-color) / 0.12),
+      0 2px 4px hsl(var(--shadow-color) / 0.1);
     --shadow-raised:
-      0 3px 0 hsl(var(--shadow-color) / 0.4),
-      0 6px 12px hsl(var(--shadow-color) / 0.25);
+      0 3px 0 hsl(var(--shadow-color) / 0.35),
+      0 6px 12px hsl(var(--shadow-color) / 0.2);
     --shadow-interactive:
-      0 5px 0 hsl(var(--shadow-color) / 0.45),
-      0 10px 16px hsl(var(--shadow-color) / 0.3);
+      0 5px 0 hsl(var(--shadow-color) / 0.4),
+      0 10px 16px hsl(var(--shadow-color) / 0.25);
     --shadow-overlay:
-      0 8px 0 hsl(var(--shadow-color) / 0.5),
-      0 16px 24px hsl(var(--shadow-color) / 0.35);
+      0 8px 0 hsl(var(--shadow-color) / 0.45),
+      0 16px 24px hsl(var(--shadow-color) / 0.3);
+    --shadow-inset:
+      inset 0 1px 0 hsl(0 0% 0% / 0.12), inset 0 -1px 0 hsl(0 0% 100% / 0.15);
   }
 }
+
+/* ───────────────────────────────────────────────
+   Base Styles
+   ─────────────────────────────────────────────── */
 
 @layer base {
   html,

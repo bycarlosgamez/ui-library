@@ -7,19 +7,19 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-foreground-inverted',
+        default: 'bg-primary text-foreground',
         secondary: 'bg-secondary/10 text-foreground',
-        outline: 'border-primary text-primary bg-primary/5',
+        outline: 'border-foreground text-foreground',
         ghost: 'bg-primary/0 hover:bg-primary/10 text-foreground',
         destructive: 'bg-destructive/10 text-destructive',
-        link: 'text-primary hover:underline',
+        link: 'text-highlight hover:underline',
       },
       size: {
         xs: 'h-6 px-2 rounded-sm text-xs',
         sm: 'h-8 px-3 rounded-md text-sm',
         default: 'h-10 px-4 rounded-lg',
         lg: 'h-12 px-6 rounded-xl text-lg',
-        icon: 'h-12 w-12 rounded-lg',
+        icon: 'h-12 w-12 rounded-full',
       },
     },
     defaultVariants: {

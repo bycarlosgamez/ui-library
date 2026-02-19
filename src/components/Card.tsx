@@ -1,17 +1,20 @@
 import { mergeProps, useRender } from '@base-ui/react';
 import { cva, type VariantProps } from 'class-variance-authority';
 
-const cardVariants = cva('rounded-2xl border border-primary/30 bg-card', {
-  variants: {
-    variant: {
-      raised: 'shadow-raised',
-      none: 'shadow-none',
+const cardVariants = cva(
+  'rounded-2xl border border-2 bg-card border-card-foreground text-card-foreground',
+  {
+    variants: {
+      variant: {
+        raised: 'shadow-raised',
+        none: 'shadow-none',
+      },
+    },
+    defaultVariants: {
+      variant: 'raised',
     },
   },
-  defaultVariants: {
-    variant: 'raised',
-  },
-});
+);
 
 interface CardProps
   extends
@@ -33,7 +36,7 @@ export const Card = (props: CardProps) => {
 };
 
 // Card header
-const cardHeaderVariants = cva('flex flex-col space-y-1.5 p-6');
+const cardHeaderVariants = cva('flex flex-col gap-1.5 p-6');
 
 interface CardHeaderProps
   extends
@@ -55,7 +58,9 @@ export const CardHeader = (props: CardHeaderProps) => {
 };
 
 // Card title
-const cardTitleVariants = cva('font-semibold leading-none tracking-tight');
+const cardTitleVariants = cva(
+  'font-semibold text-lg leading-none tracking-tight',
+);
 
 interface CardTitleProps
   extends
@@ -77,7 +82,7 @@ export const CardTitle = (props: CardTitleProps) => {
 };
 
 // Card description
-const cardDescriptionVariants = cva('text-sm text-muted-foreground');
+const cardDescriptionVariants = cva('text-sm text-card-foreground');
 
 interface CardDescriptionProps
   extends
@@ -99,7 +104,7 @@ export const CardDescription = (props: CardDescriptionProps) => {
 };
 
 // Card Content
-const cardContentVariants = cva('p-6 pt-0');
+const cardContentVariants = cva('p-6 pt-0 text-card-foreground/80');
 
 interface CardContentProps
   extends
